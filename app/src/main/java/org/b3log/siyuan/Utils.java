@@ -64,7 +64,7 @@ import mobile.Mobile;
  *
  * @author <a href="https://88250.b3log.org">Liang Ding</a>
  * @author <a href="https://github.com/wwxiaoqi">Jane Haring</a>
- * @version 1.5.0.5, Feb 18, 2026
+ * @version 1.5.0.6, Feb 21, 2026
  * @since 1.0.0
  */
 public final class Utils {
@@ -73,9 +73,6 @@ public final class Utils {
      * App version.
      */
     public static final String version = BuildConfig.VERSION_NAME;
-
-    private static volatile boolean authKeepAliveActive = false;
-    private static final String CUSTOM_TABS_KEEP_ALIVE = "android.support.customtabs.extra.KEEP_ALIVE";
 
     /**
      * App version code.
