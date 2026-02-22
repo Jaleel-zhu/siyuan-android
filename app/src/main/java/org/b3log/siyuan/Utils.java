@@ -206,14 +206,6 @@ public final class Utils {
         }
     }
 
-    private static void ensureZipPathSafety(final File outputFile, final String destDirectory) throws Exception {
-        final String destDirCanonicalPath = (new File(destDirectory)).getCanonicalPath();
-        final String outputFileCanonicalPath = outputFile.getCanonicalPath();
-        if (!outputFileCanonicalPath.startsWith(destDirCanonicalPath)) {
-            throw new Exception(String.format("Found Zip Path Traversal Vulnerability with %s", outputFileCanonicalPath));
-        }
-    }
-
     public static String getIPAddressList() {
         final List<String> list = new ArrayList<>();
         try {
